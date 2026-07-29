@@ -1,0 +1,23 @@
+﻿@model ServiceContracts.DTO.CountryAddRequest
+
+
+<html>
+<head>
+    <title>Add Country</title>
+</head>
+<body>
+
+    <form asp-action="ADD" asp-controller="Country" method="post">
+
+        <label>Enter Country Name:</label>
+
+        <input asp-for="CountryName" />
+
+        <br /><br />
+
+        <button type="submit">Save</button>
+
+    </form>
+
+</body>
+</html>
